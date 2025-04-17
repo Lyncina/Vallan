@@ -1,0 +1,125 @@
+:root {
+  --purple: #7C1AA5;
+  --red: #8b0c0c;
+  --gold: #c5b632;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+main {
+  padding: 15pt;
+  background: linear-gradient(165deg, var(--red), var(--purple)7%, #000 20% 80%, var(--purple) 93%, var(--red)) fixed;
+}
+
+.container {
+  padding: 10pt;
+  position: relative;
+  border: 1px solid var(--gold);
+  border-radius: 20px;
+  background: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+#name {
+  font-size: 45pt;
+  font-family: Papyrus, Candara, Arial, sans-serif;
+}
+
+#aka {
+  font-size: 16pt;
+  font-family: 'Copperplate Gothic', 'Copperplate Gothic Light', Georgia, serif;
+}
+
+#alias {
+  margin: 5pt auto 15pt;
+  height: 45pt;
+}
+
+.buttons {
+  button {
+    margin-bottom: 20pt;
+    height: 30pt;
+    border-width: 1px;
+    border-color: var(--gold);
+    border-radius: 5px;
+    background-image: linear-gradient(#151515, #252525 20% 80%, #101010);
+    font-size: 15pt;
+    font-family: 'Arial Black', Fantasy;
+    color: #b0b0b0;
+    text-shadow: .2pt .2pt .5pt var(--red);
+    cursor: pointer; 
+  }
+  button:active {
+    background-image: linear-gradient(#101010, #252525 20% 80%, #151515);
+    text-shadow: -.2pt -.2pt .5pt var(--red);
+  }
+}
+
+.images {
+  position: relative;
+  padding: 20pt;
+  height: 230pt;
+  border-radius: 10px;
+  box-shadow: 1pt 1pt 5pt -1pt var(--purple);
+  background-color: #252525;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200pt;
+  }
+  #static-img {
+    visibility: visible;
+  }
+  #idle-anim {
+    visibility: visible;
+  }
+  #comms-pulse {
+    visibility: hidden;
+  }
+  #armed-pulse {
+    visibility: hidden;
+  }
+  .opac90 {
+    opacity: 90%;
+  }
+  .opac70 {
+    opacity: 70%;
+  }
+  .opac50 {
+    opacity: 50%;
+  }
+}
+
+#info-section {
+  margin-top: 15pt;
+  font-size: 15pt;
+  font-family: 'Goudy Old Style', Garamond, serif;
+  color: #FFF;
+  .info {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 17pt;
+    font-family: 'Copperplate Gothic', 'Copperplate Gothic Light', Georgia, serif;
+    color: #d4d4d4;
+  }
+  .abandoned {
+    font-style: italic;
+    font-size: 11pt;
+    vertical-align: top;
+  }
+  p {
+    margin-bottom: 10pt;
+  }
+}
